@@ -21,12 +21,15 @@ font-family: 'Playfair Display', serif;
   height: 100vh;
   padding: 150px 0 100px 0;
   text-align: center;
-  background-image: url(img/page1-bg.jpg);
   background-color: rgba(97, 95, 95, 0.90);
   background-blend-mode: hard-light;
   background-size: cover;
   color: rgb(221, 221, 221);
   text-shadow: 0 0 45px rgba(0, 0, 0, .7);
+}
+
+.bg-1 {
+  background-image: url(img/page1-bg.jpg);
 }
 
 h1 {

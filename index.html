@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body class="parallax-e3">
 
   <header>
     <nav>
@@ -18,9 +18,14 @@
     </nav>
   </header>
 
-  <section class="page1">
-    <h1>Nick Nauert</h1>
-    <p>This will be some kind of clever copy about why I should matter to <br>you more than the 7 billion other people on this planet.</p>
+  <section class="page1 parallax-e3">
+    <div class="bg-1">
+
+    </div>
+    <div class="layer-p1-e3">
+      <h1>Nick Nauert</h1>
+      <p>This will be some kind of clever copy about why I should matter to <br>you more than the 7 billion other people on this planet.</p>
+    </div>
 
   </section>
   <section class="page2">
@@ -60,7 +65,63 @@
     </div>
 
   </section>
+  <style>
+    /* CSS Vertical Parallax */
 
+    * {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .parallax-e3 {
+      -webkit-perspective: 100px;
+      perspective: 100px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 0;
+      bottom: 0;
+      margin-left: -50%;
+    }
+
+    .layer-p1-e3 {
+      -webkit-transform: translateY(-1000px) translateZ(-600px) scale(7);
+      transform: translateY(-1000px) translateZ(-600px) scale(7);
+    }
+
+    .layer-p2-e3 {
+      -webkit-transform: translateY(-1200px) translateZ(-500px) scale(6);
+      transform: translateY(-1200px) translateZ(-500px) scale(6);
+    }
+
+    .layer-p3-e3 {
+      -webkit-transform: translateY(-50px) translateZ(-200px) scale(3);
+      transform: translateY(-50px) translateZ(-200px) scale(3);
+    }
+
+    .layer-p4-e3 {
+      -webkit-transform: translateY(210px) translateZ(-150px) scale(2.5);
+      transform: translateY(210px) translateZ(-150px) scale(2.5);
+    }
+
+    .layer-p5-e3 {
+      -webkit-transform: translateY(240px) translateZ(-100px) scale(2);
+      transform: translateY(240px) translateZ(-100px) scale(2);
+    }
+
+    .layer-p6-e3 {
+      -webkit-transform: translateY(54px) translateZ(-50px) scale(1.5);
+      transform: translateY(54px) translateZ(-50px) scale(1.5);
+    }
+
+    .layer-p7-e3 {
+      -webkit-transform: translateY(38px) translateZ(-25px) scale(1.25);
+      transform: translateY(38px) translateZ(-25px) scale(1.25);
+    }
+  </style>
 </body>
 
 </html>
