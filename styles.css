@@ -1,0 +1,115 @@
+/*
+
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/*========== PG 1 ==========*/
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 0 100px 0;
+  text-align: center;
+  background-image: url(img/page1-bg.jpg);
+  background-color: rgba(97, 95, 95, 0.90);
+  background-blend-mode: hard-light;
+  background-size: cover;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0 45px rgba(0, 0, 0, .7);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 140px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.page1 p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  letter-spacing: .5px;
+  line-height: 29px;
+}
+
+
+/*======== PG 2 ============*/
+
+.page2 {
+  background-image: radial-gradient(rgb(56, 56, 56), rgb(41, 41, 41));
+  height: 100vh;
+  padding: 100px 15% 125px 15%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.pics {
+  width: 275px;
+  height: 225px;
+  margin: 4px;
+  text-align: center;
+  background-color: rgb(87, 87, 87);
+  transition: .3s ease-in;
+}
+
+.pics:hover {
+  transition: .3s ease-out;
+  background-color: rgb(71, 71, 71);
+}
+
+.pics p {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.97);
+}
+
+
+/*============= PG 3 ============*/
+
+.page3 {
+  background-color: rgb(62, 62, 62);
+  height: 100vh;
+}
+
+.pg3-cont {
+  padding: 17% 12% 0 12%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  color: rgb(162, 162, 162);
+}
+
+.col:first-child {
+  margin-right: 65px;
+}
+
+.col {
+  width: 35%;
+}
+
+.col h3 {
+  margin-bottom: 10px;
+  letter-spacing: .2px;
+  font-family: 'Playfair Display', serif;
+}
+
+.col p {
+  color: rgb(111, 111, 111);
+  line-height: 19px;
+  letter-spacing: .2px;
+  font-family: 'Raleway', sans-serif;
+}
