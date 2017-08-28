@@ -21,7 +21,7 @@ font-family: 'Playfair Display', serif;
   height: 100vh;
   padding: 150px 0 100px 0;
   text-align: center;
-  background-image: url(img/page1-bg.jpg);
+  background-image: url('img/pines.jpg');
   background-color: rgba(97, 95, 95, 0.90);
   background-blend-mode: hard-light;
   background-attachment: fixed;
@@ -31,17 +31,18 @@ font-family: 'Playfair Display', serif;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 140px;
+  font-weight: 900;
+  font-size: 170px;
   margin-bottom: 10px;
-  letter-spacing: 1px;
+  letter-spacing: -2px;
 }
 
 .page1 p {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 100;
   letter-spacing: .3px;
   line-height: 29px;
 }
@@ -55,7 +56,7 @@ h1 {
 }
 
 .pg2-cont {
-  padding: 17% 12% 0 12%;
+  padding: 140px 10% 0 10%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -66,14 +67,23 @@ h1 {
   margin-right: 65px;
 }
 
+.col:first-child>img {
+  margin-top: 25px;
+}
+
 .col {
   width: 35%;
 }
 
 .col h3 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   letter-spacing: .2px;
-  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.col img {
+  margin-bottom: 25px;
 }
 
 .col p {
@@ -105,11 +115,6 @@ h1 {
   overflow: hidden;
 }
 
-.pics:hover {
-  transition: .3s ease-out;
-  background-color: rgb(71, 71, 71);
-}
-
 .pics>img {
   height: 100%;
 }
@@ -126,11 +131,61 @@ h1 {
   opacity: 0;
 }
 
+.texture {
+  opacity: .8;
+  mix-blend-mode: multiply;
+  transition: .4s;
+  transition-timing-function: ease;
+  width: 101%;
+  height: 101%;
+  position: relative;
+  right: 0;
+  bottom: 0;
+}
 
+.texture:hover {
+  transition-timing-function: ease;
+  transition: .2s;
+  opacity: 0;
+  width: 125%;
+  height: 125%;
+  bottom: 20px;
+  right: 22px;
+}
 
+#pics1 {
+  background-image: url("img/itunes.png");
+  background-size: cover;
+}
+
+#pics2 {
+  background-image: url("img/todo.png");
+  background-size: cover;
+}
+
+#pics3 {
+  background-image: url("img/wordgame.png");
+  background-size: cover;
+}
+
+#pics4 {
+  background-image: url("img/itunes.png");
+  background-size: cover;
+}
+
+#pics5 {
+  background-image: url("img/itunes.png");
+  background-size: cover;
+}
+
+#pics6 {
+  background-image: url("img/itunes.png");
+  background-size: cover;
+}
 
 
 /*==========  ANIMS  ===============*/
+
 
 /*.copy-anim {
   animation: animation 2500ms linear normal forwards;
